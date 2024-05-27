@@ -24,24 +24,24 @@ The aim of our project is to create an expressive granular synthesiser whose out
 
 ### How to use the system
 **Setup:**
-- Connect the Arduino (optional) and Elegoo devices;
-- Send the codes to Arduino (optional) and Elegoo;
-- Build the effect in JUCE;
-- Drag the VST3 file into the operating system’s VST3 folder;
-- Open the SuperCollider script;
-- Run the sections in the following order:
-  - The server;
-  - The plugin searcher;
-  - The initialisation of the net address;
-  - The initialisation of the variables;
-  - The function that creates the buffer;
-  - The SynthDef;
-  - The VST Plugin and the functions below it;
-  - The granulatorSynth;
-  - Everything that is inside the MIDI section (except for the instructions that disconnect the device);
-  - Everything that is contained into the Processing section;
-  - The entire Arduino section (once again, except for the instructions that disconnect them).
-- Open the Processing file to interact with the GUI.
+
+* Connect the Arduino (optional) and Elegoo devices;
+* Send the codes to Arduino (optional) and Elegoo;
+* Build the effect in JUCE;
+* Drag the VST3 file into the operating system’s VST3 folder;
+* Open the SuperCollider script;
+* Run the sections in the following order:
+  * Sequence of instructions written to reduce the latency:
+  * The server;
+  * The function that creates the buffer;
+  * The function that initalise the AudioBusses;
+  * The Plug-In section;
+  * The SynthDef;
+  * The granulatorSynth;
+  * Everything that is inside the MIDI section (except for the instructions that disconnect the device);
+  * Everything that is contained into the Processing section;
+  * The entire Arduino section (once again, except for the instructions that disconnect them).
+* Open the Processing file to interact with the GUI.
 
 **Play:**
 
