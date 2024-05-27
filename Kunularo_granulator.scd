@@ -22,7 +22,7 @@ Server.killAll;
 //audio files have to be placed into wav folder in order to work with processing too.
 
 (
-~selectedpath = "C:/Users/matti/OneDrive/Documenti/GitHub/CMLS-2024/superCollider/wav/piano.wav";
+~selectedpath = "/Users/filippo/Library/CloudStorage/OneDrive-PolitecnicodiMilano/Corsi/Computer Music - Languages and Systems 💽/Progetto/CMLS-2024/wav/test.wav";
 ~buf = Buffer.readChannel(s, ~selectedpath, channels:[0]);
 )
 
@@ -112,7 +112,7 @@ SynthDef.new(\granulator, {
 )
 
 //----- let's play! ------*/
-~granulator = Synth(\granulator,[\buf, ~buf, \out, 0]);
+~granulator = Synth(\granulator,[\buf,~buf ,\out,~audioBus]);
 ~granulator.free;
 
 
@@ -138,9 +138,9 @@ MIDIIn.disconnectAll;
 ~addrsend = NetAddr.new("127.0.0.1", 12000);
 
 /*---- sensor management --- */
-~arduino1 = 0; //random position, trigger
-~arduino2 = 0; //volume
-~midi = 0; //pitch
+~arduino1 = 1; //random position, trigger
+~arduino2 = 1; //volume
+~midi = 1; //pitch
 
 (
 ~controlConnected = Routine.new({
@@ -155,7 +155,6 @@ MIDIIn.disconnectAll;
 (
 ~patharray = ~selectedpath.split($\/);
 ~path = ~patharray[~patharray.size-1];
-~path.postln;
 ~addrsend.sendMsg("/filepath", ~path);
 )
 
