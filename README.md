@@ -13,7 +13,8 @@
 * #### Mattia Martelli &nbsp;([@laughinginloud](https://github.com/laughinginloud))<br> 10684872 &nbsp;&nbsp; mattia.martelli@mail.polimi.it
   
 * #### Filippo Marri &nbsp;([@filippomarri](https://github.com/filippomarri))<br> 11010508 &nbsp;&nbsp; filippo.marri@mail.polimi.it
-  
+
+[![Link to the video](Deliveries/Thumbnail.png)](https://www.youtube.com/watch?v=SRQXnA6q_-E)
 
 ### About the project
 
