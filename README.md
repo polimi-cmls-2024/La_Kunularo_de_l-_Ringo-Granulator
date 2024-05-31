@@ -14,6 +14,7 @@
   
 * #### Filippo Marri &nbsp;([@filippomarri](https://github.com/filippomarri))<br> 11010508 &nbsp;&nbsp; filippo.marri@mail.polimi.it
 
+### Video demonstration
 [![Link to the video](Deliveries/Thumbnail.png)](https://www.youtube.com/watch?v=SRQXnA6q_-E)
 
 ### About the project
