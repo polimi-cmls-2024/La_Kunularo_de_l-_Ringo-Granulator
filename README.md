@@ -53,7 +53,7 @@ Once the system is set up, we are ready to play! By pressing a key on the keyboa
 
 ### Technologies and libraries
 
-In order to run the project the follwing softwares has to be installed:
+In order to run the project, the follwing software has to be installed:
 
 * SuperCollider ([Download](https://supercollider.github.io))
 * Juce ([Download](https://juce.com))
